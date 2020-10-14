@@ -2,16 +2,15 @@ console.log("its working")
 
 let theme = localStorage.getItem('theme')
 
-if(theme == null){
+if (theme == null) {
   setTheme('light')
-}
-else {
+} else {
   setTheme(theme)
 }
 
 let themeDot = document.getElementsByClassName('theme-dot')
 
-for(var i=0;themeDot.length>i;i++){
+for (var i = 0; themeDot.length > i; i++) {
   themeDot[i].addEventListener('click', function() {
     let mode = this.dataset.mode
     console.log('Options clicked: ', mode)
@@ -19,19 +18,19 @@ for(var i=0;themeDot.length>i;i++){
   });
 }
 
-function setTheme(mode){
+function setTheme(mode) {
 
-  if(mode == 'light'){
+  if (mode == 'light') {
 
     document.getElementById('theme-style').href = 'css/default.css'
   }
-  if(mode == 'blue'){
+  if (mode == 'blue') {
     document.getElementById('theme-style').href = 'css/blue.css'
   }
-  if(mode == 'green'){
+  if (mode == 'green') {
     document.getElementById('theme-style').href = 'css/green.css'
   }
-  if(mode == 'purple'){
+  if (mode == 'purple') {
     document.getElementById('theme-style').href = 'css/purple.css'
   }
 
