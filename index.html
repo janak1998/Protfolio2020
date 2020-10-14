@@ -8,6 +8,8 @@
     inital-scale=1, maximum-scale=1, minimum=sacle=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Russo+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/default.css">
+  <link id="theme-style" rel="stylesheet" href="">
+
 </head>
 
 <body>
@@ -34,10 +36,10 @@
           <img src="images/janak.jpg" alt="profile photo" id="profile_pic">
           <h5 style="text-align: center;line-height:0;">Personalize Theme</h5>
           <div id="theme-options-wrapper">
-            <div class="theme-dot" id="light-mode"></div>
-            <div class="theme-dot" id="blue-mode"></div>
-            <div class="theme-dot" id="green-mode"></div>
-            <div class="theme-dot" id="purple-mode"></div>
+            <div data-mode="light" class="theme-dot" id="light-mode"></div>
+            <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+            <div data-mode="green" class="theme-dot" id="green-mode"></div>
+            <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
           </div>
           <p id="settings-note">*Theme settings will be saved for<br>your next visit. </p>
 
@@ -173,6 +175,7 @@
     </div>
 
   </section>
+  <script type="text/javascript" src="script.js" ></script>
 </body>
 
 </html>
